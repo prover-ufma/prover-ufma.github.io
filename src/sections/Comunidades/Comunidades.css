@@ -200,22 +200,24 @@
   pointer-events: auto;
 }
 
-.popup-comunidades-direita {
-  margin-left: 16px;
-}
+@media (min-width: 561px) {
+  .popup-comunidades-direita {
+    margin-left: 16px;
+  }
 
-.popup-comunidades-esquerda {
-  margin-left: -16px;
-  translate: -100% 0;
-}
+  .popup-comunidades-esquerda {
+    margin-left: -16px;
+    translate: -100% 0;
+  }
 
-.popup-comunidades-abaixo {
-  margin-top: -12px;
-}
+  .popup-comunidades-abaixo {
+    margin-top: -12px;
+  }
 
-.popup-comunidades-acima {
-  margin-top: 12px;
-  transform: translateY(-100%);
+  .popup-comunidades-acima {
+    margin-top: 12px;
+    transform: translateY(-100%);
+  }
 }
 
 .popup-comunidades-cabecalho {
@@ -372,8 +374,6 @@
     min-width: 0;
     max-width: none;
     margin: 14px 0 0;
-    translate: none;
-    transform: none;
     box-shadow: none;
     pointer-events: auto;
   }
