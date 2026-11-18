@@ -9,6 +9,7 @@ export const traducoes = {
     "Resultados": "Results",
     "Sobre": "About",
     "Tecnologias": "Technologies",
+    "Galeria": "Gallery",
     "Cidades": "Cities",
     "Equipe": "Team",
     "Contato": "Contact",
@@ -26,7 +27,7 @@ export const traducoes = {
     "A proposta combina saúde, ciência e tecnologia para ampliar o acesso à avaliação da saúde ocular, especialmente em regiões com menor acesso aos serviços especializados.":
       "The initiative combines healthcare, science, and technology to expand access to eye health assessments, especially in regions with limited access to specialized services.",
     "Objetivo": "Objective",
-    "Fotos das ações": "Photos from the field",
+    "Galeria de imagens": "Image gallery",
     "Ampliar foto {numero}": "Enlarge photo {numero}",
     "Foto {numero} das ações do projeto": "Photo {numero} from the project's field activities",
     "Fechar foto": "Close photo",

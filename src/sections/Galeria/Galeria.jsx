@@ -69,7 +69,7 @@ function Galeria() {
   return (
     <section className="secao galeria" id="galeria">
       <div className="container">
-        <h2 className="titulo-secao">{t("Fotos das ações")}</h2>
+        <h2 className="titulo-secao">{t("Galeria de imagens")}</h2>
 
         {/* Carrossel: arraste/deslize para o lado ou use as setas. */}
         <div className="galeria-carrossel">

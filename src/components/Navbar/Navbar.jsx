@@ -99,8 +99,8 @@ function Navbar() {
             {t("Sobre")}
           </a>
 
-          <a href="#tecnologias" onClick={(event) => navegarPara(event, "sobre", "tecnologias")}>
-            {t("Tecnologias")}
+          <a href="#galeria" onClick={(event) => navegarPara(event, "galeria")}>
+            {t("Galeria")}
           </a>
 
           <a href="#comunidades" onClick={(event) => navegarPara(event, "comunidades")}>
