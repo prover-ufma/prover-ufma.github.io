@@ -1,0 +1,92 @@
+.apoio {
+  background: #e9e4d5;
+  padding: 8px 0 44px;
+}
+
+.apoio .rodape-divisor {
+  margin: 0 0 26px;
+  border: 0;
+  border-top: 1px solid rgba(40, 92, 75, 0.15);
+}
+
+.apoio-painel {
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(40, 92, 75, 0.06);
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.logos-apoio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 29px;
+  align-items: center;
+}
+
+.logo-apoio {
+  min-width: 0;
+}
+
+.logo-apoio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 66px;
+  padding: 4px;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.logo-apoio-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(var(--escala, 1));
+}
+
+/* Data da última atualização */
+.apoio-atualizacao {
+  margin: 18px 0 0;
+  color: #5c6a62;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Responsivo */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .logos-apoio {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+/* Celular */
+@media (max-width: 560px) {
+  .apoio {
+    padding-bottom: 30px;
+  }
+
+  .apoio-painel {
+    padding: 18px 14px;
+  }
+
+  .logos-apoio {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 14px;
+  }
+
+  .logo-apoio-item {
+    height: 60px;
+  }
+}

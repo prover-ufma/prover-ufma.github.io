@@ -1,0 +1,137 @@
+.equipe {
+  background: #faf8f0;
+}
+
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* Card de cada pessoa */
+
+.pessoa-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d8dedc;
+  background: #f1ecd9;
+  overflow: hidden;
+}
+
+.pessoa-foto {
+  width: 100%;
+  height: 260px;
+  background: #e6eae9;
+}
+
+.pessoa-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pessoa-informacoes {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px;
+}
+
+.pessoa-informacoes h3 {
+  color: #125844;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.pessoa-informacoes p {
+  margin: 0 0 4px;
+  color: #263d36;
+  font-size: 16px;
+}
+
+.pessoa-informacoes small {
+  color: #000000;
+  font-size: 16px;
+}
+
+.pessoa-lattes {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  padding-top: 18px;
+  color: #125844;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.pessoa-lattes-seta {
+  flex-shrink: 0;
+  transition: transform 160ms ease;
+}
+
+.pessoa-lattes:hover .pessoa-lattes-seta {
+  transform: translate(1px, -1px);
+}
+
+.pessoa-lattes:hover {
+  color: #0b827f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pessoa-lattes:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid #125844;
+  outline-offset: 4px;
+}
+
+/* Responsivo */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .equipe-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  /* Foto quadrada, proporcional à largura do cartão */
+  .pessoa-foto {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    /* Sem isto, uma foto que não é quadrada estica a moldura */
+    overflow: hidden;
+  }
+}
+
+/* Celular */
+@media (max-width: 560px) {
+  .equipe-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .pessoa-informacoes {
+    padding: 14px;
+  }
+
+  .pessoa-informacoes h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .pessoa-informacoes p,
+  .pessoa-informacoes small,
+  .pessoa-lattes {
+    font-size: 14px;
+  }
+
+  .pessoa-lattes {
+    padding-top: 12px;
+  }
+}

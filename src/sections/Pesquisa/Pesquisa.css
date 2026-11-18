@@ -1,0 +1,67 @@
+.pesquisa-quadro {
+  padding: 48px 3%;
+  background-color: #f1ecd9;
+}
+
+.etapas-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+}
+
+.etapa-card {
+  min-width: 0;
+  min-height: 154px;
+  border-left: 2px solid #E05F07;
+  padding: 0 24px;
+}
+
+.numero-etapa {
+  display: block;
+  color: #E05F07;
+  font-family: var(--fonte-titulos);
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+.etapa-card h3 {
+  color: #202e29;
+  font-family: var(--fonte-texto);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.etapa-card p {
+  color: #52625b;
+  font-family: var(--fonte-texto);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsivo */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .etapas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 32px;
+  }
+
+  .etapa-card {
+    min-height: 0;
+  }
+}
+
+/* Celular */
+@media (max-width: 560px) {
+  .etapas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .numero-etapa {
+    margin-bottom: 12px;
+  }
+}

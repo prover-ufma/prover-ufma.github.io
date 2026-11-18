@@ -1,0 +1,870 @@
+{
+  "Açailândia": {
+    "x": 21.63,
+    "y": 40.71
+  },
+  "Afonso Cunha": {
+    "x": 77.29,
+    "y": 34.75
+  },
+  "Água Doce do Maranhão": {
+    "x": 92.9,
+    "y": 21.52
+  },
+  "Alcântara": {
+    "x": 60.27,
+    "y": 15.76
+  },
+  "Aldeias Altas": {
+    "x": 76.11,
+    "y": 37.75
+  },
+  "Altamira do Maranhão": {
+    "x": 46.86,
+    "y": 34.27
+  },
+  "Alto Alegre do Maranhão": {
+    "x": 62.17,
+    "y": 34.69
+  },
+  "Alto Alegre do Pindaré": {
+    "x": 39.9,
+    "y": 31.26
+  },
+  "Alto Parnaíba": {
+    "x": 37.07,
+    "y": 90.29
+  },
+  "Amapá do Maranhão": {
+    "x": 40.73,
+    "y": 8.24
+  },
+  "Amarante do Maranhão": {
+    "x": 32.1,
+    "y": 45.94
+  },
+  "Anajatuba": {
+    "x": 59.46,
+    "y": 24.68
+  },
+  "Anapurus": {
+    "x": 79.91,
+    "y": 27.75
+  },
+  "Apicum-Açu": {
+    "x": 52.76,
+    "y": 6.8
+  },
+  "Araguanã": {
+    "x": 42.94,
+    "y": 22.9
+  },
+  "Araioses": {
+    "x": 94.96,
+    "y": 21.79
+  },
+  "Arame": {
+    "x": 40.64,
+    "y": 43.58
+  },
+  "Arari": {
+    "x": 57.57,
+    "y": 27.63
+  },
+  "Axixá": {
+    "x": 66.18,
+    "y": 20.2
+  },
+  "Bacabal": {
+    "x": 57.15,
+    "y": 34.29
+  },
+  "Bacabeira": {
+    "x": 62.53,
+    "y": 21.37
+  },
+  "Bacuri": {
+    "x": 51.54,
+    "y": 8.38
+  },
+  "Bacurituba": {
+    "x": 58.88,
+    "y": 18.85
+  },
+  "Balsas": {
+    "x": 35.28,
+    "y": 76.9
+  },
+  "Barão de Grajaú": {
+    "x": 78.75,
+    "y": 59.58
+  },
+  "Barra do Corda": {
+    "x": 50.34,
+    "y": 49.81
+  },
+  "Barreirinhas": {
+    "x": 82.53,
+    "y": 20.48
+  },
+  "Belágua": {
+    "x": 75.1,
+    "y": 22.99
+  },
+  "Bela Vista do Maranhão": {
+    "x": 50.15,
+    "y": 29.98
+  },
+  "Benedito Leite": {
+    "x": 59.76,
+    "y": 65.15
+  },
+  "Bequimão": {
+    "x": 56.74,
+    "y": 16.08
+  },
+  "Bernardo do Mearim": {
+    "x": 58.08,
+    "y": 39.56
+  },
+  "Boa Vista do Gurupi": {
+    "x": 37.54,
+    "y": 9.18
+  },
+  "Bom Jardim": {
+    "x": 34.24,
+    "y": 31.46
+  },
+  "Bom Jesus das Selvas": {
+    "x": 30.51,
+    "y": 38.78
+  },
+  "Bom Lugar": {
+    "x": 53.52,
+    "y": 36.12
+  },
+  "Brejo": {
+    "x": 83.77,
+    "y": 29.24
+  },
+  "Brejo de Areia": {
+    "x": 46.23,
+    "y": 36.36
+  },
+  "Buriti": {
+    "x": 81.37,
+    "y": 31.47
+  },
+  "Buriti Bravo": {
+    "x": 69.94,
+    "y": 51.2
+  },
+  "Buriticupu": {
+    "x": 35.29,
+    "y": 37.66
+  },
+  "Buritirana": {
+    "x": 25.37,
+    "y": 48.37
+  },
+  "Cachoeira Grande": {
+    "x": 68.55,
+    "y": 23.32
+  },
+  "Cajapió": {
+    "x": 59.69,
+    "y": 20.65
+  },
+  "Cajari": {
+    "x": 53.39,
+    "y": 26.06
+  },
+  "Campestre do Maranhão": {
+    "x": 22.58,
+    "y": 55.25
+  },
+  "Cândido Mendes": {
+    "x": 44.49,
+    "y": 7.68
+  },
+  "Cantanhede": {
+    "x": 63.98,
+    "y": 28.56
+  },
+  "Capinzal do Norte": {
+    "x": 63.38,
+    "y": 39.63
+  },
+  "Carolina": {
+    "x": 23.42,
+    "y": 67.81
+  },
+  "Carutapera": {
+    "x": 39.64,
+    "y": 4.87
+  },
+  "Caxias": {
+    "x": 77.31,
+    "y": 41.57
+  },
+  "Cedral": {
+    "x": 59.4,
+    "y": 11.45
+  },
+  "Central do Maranhão": {
+    "x": 55.6,
+    "y": 14.37
+  },
+  "Centro do Guilherme": {
+    "x": 38.24,
+    "y": 15.48
+  },
+  "Centro Novo do Maranhão": {
+    "x": 32.59,
+    "y": 22.97
+  },
+  "Chapadinha": {
+    "x": 75.14,
+    "y": 30.93
+  },
+  "Cidelândia": {
+    "x": 14.77,
+    "y": 43.55
+  },
+  "Codó": {
+    "x": 69.17,
+    "y": 38.85
+  },
+  "Coelho Neto": {
+    "x": 79.85,
+    "y": 35.1
+  },
+  "Colinas": {
+    "x": 65.1,
+    "y": 53.99
+  },
+  "Conceição do Lago-Açu": {
+    "x": 56.04,
+    "y": 30.4
+  },
+  "Coroatá": {
+    "x": 65.6,
+    "y": 33.57
+  },
+  "Cururupu": {
+    "x": 56.28,
+    "y": 8.27
+  },
+  "Davinópolis": {
+    "x": 22.07,
+    "y": 49.21
+  },
+  "Dom Pedro": {
+    "x": 62.15,
+    "y": 43.19
+  },
+  "Duque Bacelar": {
+    "x": 81.26,
+    "y": 33.54
+  },
+  "Esperantinópolis": {
+    "x": 55.31,
+    "y": 41.86
+  },
+  "Estreito": {
+    "x": 23.43,
+    "y": 61.61
+  },
+  "Feira Nova do Maranhão": {
+    "x": 31.39,
+    "y": 63.86
+  },
+  "Fernando Falcão": {
+    "x": 49.26,
+    "y": 55.9
+  },
+  "Formosa da Serra Negra": {
+    "x": 37.57,
+    "y": 58.93
+  },
+  "Fortaleza dos Nogueiras": {
+    "x": 38.88,
+    "y": 63.53
+  },
+  "Fortuna": {
+    "x": 67.19,
+    "y": 49.94
+  },
+  "Godofredo Viana": {
+    "x": 43.24,
+    "y": 5.16
+  },
+  "Gonçalves Dias": {
+    "x": 65.25,
+    "y": 44.54
+  },
+  "Governador Archer": {
+    "x": 64.58,
+    "y": 42.92
+  },
+  "Governador Edison Lobão": {
+    "x": 21.73,
+    "y": 50.46
+  },
+  "Governador Eugênio Barros": {
+    "x": 66.67,
+    "y": 46.98
+  },
+  "Governador Luiz Rocha": {
+    "x": 66.31,
+    "y": 48.56
+  },
+  "Governador Newton Bello": {
+    "x": 41.11,
+    "y": 26.47
+  },
+  "Governador Nunes Freire": {
+    "x": 42.52,
+    "y": 12.29
+  },
+  "Graça Aranha": {
+    "x": 63.21,
+    "y": 47.28
+  },
+  "Grajaú": {
+    "x": 39.26,
+    "y": 51.56
+  },
+  "Guimarães": {
+    "x": 58.73,
+    "y": 13.16
+  },
+  "Humberto de Campos": {
+    "x": 73.38,
+    "y": 18.04
+  },
+  "Icatu": {
+    "x": 69.39,
+    "y": 18.12
+  },
+  "Igarapé do Meio": {
+    "x": 52.15,
+    "y": 28.85
+  },
+  "Igarapé Grande": {
+    "x": 56.3,
+    "y": 38.62
+  },
+  "Imperatriz": {
+    "x": 18.28,
+    "y": 46.5
+  },
+  "Itaipava do Grajaú": {
+    "x": 44.97,
+    "y": 44.47
+  },
+  "Itapecuru Mirim": {
+    "x": 63.79,
+    "y": 26.12
+  },
+  "Itinga do Maranhão": {
+    "x": 22.62,
+    "y": 35.34
+  },
+  "Jatobá": {
+    "x": 63.54,
+    "y": 51.86
+  },
+  "Jenipapo dos Vieiras": {
+    "x": 45.86,
+    "y": 47.04
+  },
+  "João Lisboa": {
+    "x": 23.69,
+    "y": 45.33
+  },
+  "Joselândia": {
+    "x": 57.16,
+    "y": 43.09
+  },
+  "Junco do Maranhão": {
+    "x": 38.41,
+    "y": 10.79
+  },
+  "Lago da Pedra": {
+    "x": 51.29,
+    "y": 40.38
+  },
+  "Lago do Junco": {
+    "x": 54.07,
+    "y": 38.16
+  },
+  "Lago Verde": {
+    "x": 55.42,
+    "y": 32.41
+  },
+  "Lagoa do Mato": {
+    "x": 74,
+    "y": 53.94
+  },
+  "Lago dos Rodrigues": {
+    "x": 54.64,
+    "y": 38.83
+  },
+  "Lagoa Grande do Maranhão": {
+    "x": 48.28,
+    "y": 42.22
+  },
+  "Lajeado Novo": {
+    "x": 27.25,
+    "y": 54.5
+  },
+  "Lima Campos": {
+    "x": 61.19,
+    "y": 38.32
+  },
+  "Loreto": {
+    "x": 50.77,
+    "y": 66.21
+  },
+  "Luís Domingues": {
+    "x": 41.52,
+    "y": 5.3
+  },
+  "Magalhães de Almeida": {
+    "x": 92.65,
+    "y": 25.2
+  },
+  "Maracaçumé": {
+    "x": 40.11,
+    "y": 11.46
+  },
+  "Marajá do Sena": {
+    "x": 46.1,
+    "y": 40.2
+  },
+  "Maranhãozinho": {
+    "x": 40.17,
+    "y": 16.36
+  },
+  "Mata Roma": {
+    "x": 78.26,
+    "y": 28.6
+  },
+  "Matinha": {
+    "x": 53.78,
+    "y": 22.82
+  },
+  "Matões": {
+    "x": 77.47,
+    "y": 47.01
+  },
+  "Matões do Norte": {
+    "x": 61.03,
+    "y": 29.99
+  },
+  "Milagres do Maranhão": {
+    "x": 84.22,
+    "y": 27.25
+  },
+  "Mirador": {
+    "x": 54.37,
+    "y": 58.16
+  },
+  "Miranda do Norte": {
+    "x": 60.32,
+    "y": 27.65
+  },
+  "Mirinzal": {
+    "x": 55.97,
+    "y": 12.26
+  },
+  "Monção": {
+    "x": 49.39,
+    "y": 27.08
+  },
+  "Montes Altos": {
+    "x": 25.65,
+    "y": 51.93
+  },
+  "Morros": {
+    "x": 70.68,
+    "y": 21.8
+  },
+  "Nina Rodrigues": {
+    "x": 70.18,
+    "y": 26.55
+  },
+  "Nova Colinas": {
+    "x": 36.36,
+    "y": 65.4
+  },
+  "Nova Iorque": {
+    "x": 67.05,
+    "y": 61.27
+  },
+  "Nova Olinda do Maranhão": {
+    "x": 40.63,
+    "y": 20.99
+  },
+  "Olho d'Água das Cunhãs": {
+    "x": 52.15,
+    "y": 33.49
+  },
+  "Olinda Nova do Maranhão": {
+    "x": 53.67,
+    "y": 21.81
+  },
+  "Paço do Lumiar": {
+    "x": 65.94,
+    "y": 16.9
+  },
+  "Palmeirândia": {
+    "x": 53.46,
+    "y": 18.87
+  },
+  "Paraibano": {
+    "x": 68.65,
+    "y": 57.64
+  },
+  "Parnarama": {
+    "x": 74.96,
+    "y": 49.46
+  },
+  "Passagem Franca": {
+    "x": 70.94,
+    "y": 55.01
+  },
+  "Pastos Bons": {
+    "x": 65.11,
+    "y": 60.03
+  },
+  "Paulino Neves": {
+    "x": 86.76,
+    "y": 20.56
+  },
+  "Paulo Ramos": {
+    "x": 48.82,
+    "y": 37.93
+  },
+  "Pedreiras": {
+    "x": 59.44,
+    "y": 38.97
+  },
+  "Pedro do Rosário": {
+    "x": 47.87,
+    "y": 21.96
+  },
+  "Penalva": {
+    "x": 49.87,
+    "y": 24.69
+  },
+  "Peri Mirim": {
+    "x": 55.25,
+    "y": 17.61
+  },
+  "Peritoró": {
+    "x": 63.72,
+    "y": 36.89
+  },
+  "Pindaré-Mirim": {
+    "x": 47.77,
+    "y": 29.28
+  },
+  "Pinheiro": {
+    "x": 51.98,
+    "y": 16.91
+  },
+  "Pio XII": {
+    "x": 52.52,
+    "y": 30.95
+  },
+  "Pirapemas": {
+    "x": 65.22,
+    "y": 30.24
+  },
+  "Poção de Pedras": {
+    "x": 56.12,
+    "y": 40.58
+  },
+  "Porto Franco": {
+    "x": 23.73,
+    "y": 57.27
+  },
+  "Porto Rico do Maranhão": {
+    "x": 58.82,
+    "y": 10.49
+  },
+  "Presidente Dutra": {
+    "x": 61.3,
+    "y": 45.94
+  },
+  "Presidente Juscelino": {
+    "x": 66.52,
+    "y": 23.01
+  },
+  "Presidente Médici": {
+    "x": 43.14,
+    "y": 14.97
+  },
+  "Presidente Sarney": {
+    "x": 48.82,
+    "y": 17.76
+  },
+  "Presidente Vargas": {
+    "x": 68.21,
+    "y": 25.68
+  },
+  "Primeira Cruz": {
+    "x": 76.36,
+    "y": 18.96
+  },
+  "Raposa": {
+    "x": 66.41,
+    "y": 16.17
+  },
+  "Riachão": {
+    "x": 31.01,
+    "y": 70.17
+  },
+  "Ribamar Fiquene": {
+    "x": 21.89,
+    "y": 53
+  },
+  "Rosário": {
+    "x": 64.81,
+    "y": 21.5
+  },
+  "Sambaíba": {
+    "x": 46.13,
+    "y": 68.43
+  },
+  "Santa Filomena do Maranhão": {
+    "x": 59.11,
+    "y": 48.38
+  },
+  "Santa Helena": {
+    "x": 48.52,
+    "y": 16.09
+  },
+  "Santa Inês": {
+    "x": 47.81,
+    "y": 31.17
+  },
+  "Santa Luzia": {
+    "x": 41.59,
+    "y": 35.91
+  },
+  "Santa Luzia do Paruá": {
+    "x": 42.88,
+    "y": 17.27
+  },
+  "Santa Quitéria do Maranhão": {
+    "x": 82.02,
+    "y": 25.23
+  },
+  "Santa Rita": {
+    "x": 63.19,
+    "y": 23.71
+  },
+  "Santana do Maranhão": {
+    "x": 86.71,
+    "y": 24.13
+  },
+  "Santo Amaro do Maranhão": {
+    "x": 78.86,
+    "y": 18.12
+  },
+  "Santo Antônio dos Lopes": {
+    "x": 60.96,
+    "y": 41.14
+  },
+  "São Benedito do Rio Preto": {
+    "x": 72.87,
+    "y": 25.99
+  },
+  "São Bento": {
+    "x": 53.81,
+    "y": 19.97
+  },
+  "São Bernardo": {
+    "x": 89.59,
+    "y": 25.33
+  },
+  "São Domingos do Azeitão": {
+    "x": 59.09,
+    "y": 62.14
+  },
+  "São Domingos do Maranhão": {
+    "x": 62.96,
+    "y": 49.62
+  },
+  "São Félix de Balsas": {
+    "x": 55.41,
+    "y": 64.85
+  },
+  "São Francisco do Brejão": {
+    "x": 21.34,
+    "y": 44.61
+  },
+  "São Francisco do Maranhão": {
+    "x": 79.23,
+    "y": 55.44
+  },
+  "São João Batista": {
+    "x": 57.13,
+    "y": 22.12
+  },
+  "São João do Carú": {
+    "x": 34.6,
+    "y": 27.91
+  },
+  "São João do Paraíso": {
+    "x": 27.58,
+    "y": 58.27
+  },
+  "São João do Soter": {
+    "x": 70.82,
+    "y": 43.37
+  },
+  "São João dos Patos": {
+    "x": 72.6,
+    "y": 59.25
+  },
+  "São José de Ribamar": {
+    "x": 66.33,
+    "y": 17.73
+  },
+  "São José dos Basílios": {
+    "x": 59.74,
+    "y": 43.35
+  },
+  "São Luís": {
+    "x": 63.35,
+    "y": 18.23
+  },
+  "São Luís Gonzaga do Maranhão": {
+    "x": 58.77,
+    "y": 36.48
+  },
+  "São Mateus do Maranhão": {
+    "x": 60.33,
+    "y": 32.37
+  },
+  "São Pedro da Água Branca": {
+    "x": 7.32,
+    "y": 44.35
+  },
+  "São Pedro dos Crentes": {
+    "x": 30.25,
+    "y": 62
+  },
+  "São Raimundo das Mangabeiras": {
+    "x": 44.27,
+    "y": 64.03
+  },
+  "São Raimundo do Doca Bezerra": {
+    "x": 52.45,
+    "y": 43.88
+  },
+  "São Roberto": {
+    "x": 53.33,
+    "y": 43.15
+  },
+  "São Vicente Ferrer": {
+    "x": 54.64,
+    "y": 20.79
+  },
+  "Satubinha": {
+    "x": 50.23,
+    "y": 31.87
+  },
+  "Senador Alexandre Costa": {
+    "x": 67.81,
+    "y": 45.68
+  },
+  "Senador La Rocque": {
+    "x": 24.73,
+    "y": 46.35
+  },
+  "Serrano do Maranhão": {
+    "x": 53.55,
+    "y": 10.26
+  },
+  "Sítio Novo": {
+    "x": 31.79,
+    "y": 55.8
+  },
+  "Sucupira do Norte": {
+    "x": 62.92,
+    "y": 58.75
+  },
+  "Sucupira do Riachão": {
+    "x": 74.54,
+    "y": 58.16
+  },
+  "Tasso Fragoso": {
+    "x": 41.59,
+    "y": 77.89
+  },
+  "Timbiras": {
+    "x": 70.17,
+    "y": 34.1
+  },
+  "Timon": {
+    "x": 81.67,
+    "y": 44.86
+  },
+  "Trizidela do Vale": {
+    "x": 58.37,
+    "y": 38.02
+  },
+  "Tufilândia": {
+    "x": 45.79,
+    "y": 29.97
+  },
+  "Tuntum": {
+    "x": 57.6,
+    "y": 49.28
+  },
+  "Turiaçu": {
+    "x": 47.39,
+    "y": 9.23
+  },
+  "Turilândia": {
+    "x": 47.77,
+    "y": 13.31
+  },
+  "Tutóia": {
+    "x": 89.86,
+    "y": 21.16
+  },
+  "Urbano Santos": {
+    "x": 76.64,
+    "y": 25.25
+  },
+  "Vargem Grande": {
+    "x": 69.62,
+    "y": 29.49
+  },
+  "Viana": {
+    "x": 53.78,
+    "y": 23.7
+  },
+  "Vila Nova dos Martírios": {
+    "x": 11.31,
+    "y": 43.73
+  },
+  "Vitória do Mearim": {
+    "x": 54.86,
+    "y": 27.99
+  },
+  "Vitorino Freire": {
+    "x": 49.49,
+    "y": 35.05
+  },
+  "Zé Doca": {
+    "x": 40.44,
+    "y": 24.95
+  }
+}

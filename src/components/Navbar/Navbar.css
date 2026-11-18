@@ -1,0 +1,260 @@
+.cabecalho {
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-marca img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  /* Diminui o espaço entre os links em telas médias para caber tudo. */
+  gap: clamp(16px, 2vw, 28px);
+  margin-left: auto;
+}
+
+.navbar-links a {
+  color: #00363F;
+  font-size: 17px;
+}
+
+.navbar-links a:hover {
+  color: #00CCFF;
+}
+
+/* Seletor de idioma */
+
+.seletor-idioma-container {
+  position: relative;
+  margin-left: 24px;
+}
+
+.seletor-idioma {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px 8px 20px;
+  border: 0;
+  border-left: 1px solid #E05F07;
+  background: transparent;
+  color: #00363F;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.seta-idioma {
+  width: 11px;
+  height: 11px;
+  border-right: 2px solid #E05F07;
+  border-bottom: 2px solid #E05F07;
+  transform: rotate(45deg) translateY(-3px);
+  transition: transform 0.15s ease;
+}
+
+.seta-idioma.aberta {
+  transform: rotate(225deg) translate(-2px, -1px);
+}
+
+.opcoes-idioma {
+  position: absolute;
+  top: calc(100% + 18px);
+  right: 0;
+  z-index: 1001;
+  display: grid;
+  min-width: 210px;
+  padding: 12px;
+  border: 1px solid #faf8f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.opcoes-idioma button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #00363F;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.opcao-idioma-sigla {
+  min-width: 48px;
+  font-weight: 700;
+}
+
+/* Laranja com fundo bege só quando o mouse passa por cima */
+.opcoes-idioma button:hover {
+  background: #f7eee7;
+  color: #E05F07;
+}
+
+.opcoes-idioma button.ativa {
+  color: #00363F;
+  cursor: default;
+}
+
+.opcoes-idioma button.ativa:hover {
+  background: transparent;
+}
+
+.opcoes-idioma button.ativa::after {
+  content: "";
+  width: 6px;
+  height: 11px;
+  margin-left: auto;
+  border-right: 2px solid #00363F;
+  border-bottom: 2px solid #00363F;
+  transform: rotate(45deg) translate(-2px, -2px);
+}
+
+/* Menu de celular e tablet */
+
+.botao-menu,
+.idioma-menu {
+  display: none;
+}
+
+/* Responsivo  */
+
+@media (max-width: 900px) {
+  .navbar {
+    position: relative;
+    justify-content: center;
+    height: 72px;
+  }
+
+  .seletor-idioma-container {
+    display: none;
+  }
+
+  .botao-menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+    width: 44px;
+    height: 44px;
+    padding: 0 6px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  .botao-menu span {
+    display: block;
+    height: 2px;
+    background: #00363F;
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .botao-menu.aberto span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .botao-menu.aberto span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .botao-menu.aberto span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Largura total da tela, qualquer que seja a largura do .container */
+    left: calc(50% - 50vw);
+    right: calc(50% - 50vw);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: 8px calc(50vw - 50%) 16px;
+    background: #ffffff;
+    border-top: 1px solid #e3dfd0;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+  }
+
+  .navbar-links.menu-aberto {
+    display: flex;
+  }
+
+  .navbar-links a {
+    padding: 14px 0;
+    border-bottom: 1px solid #f0ece0;
+    font-size: 18px;
+  }
+
+  .idioma-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0 4px;
+  }
+
+  .idioma-menu-rotulo {
+    margin-right: auto;
+    color: #5c6a62;
+    font-size: 16px;
+  }
+
+  .idioma-menu button {
+    min-width: 64px;
+    padding: 8px 14px;
+    border: 1px solid #00363F;
+    border-radius: 999px;
+    background: transparent;
+    color: #00363F;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .idioma-menu button.ativo {
+    background: #00363F;
+    color: #ffffff;
+  }
+}
+
+/* Celular */
+@media (max-width: 560px) {
+  .navbar-marca img {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .botao-menu span {
+    transition: none;
+  }
+}

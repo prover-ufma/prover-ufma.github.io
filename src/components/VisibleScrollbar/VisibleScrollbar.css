@@ -1,0 +1,61 @@
+.visible-scrollbar-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 10px;
+  align-items: stretch;
+  gap: 8px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.visible-scrollbar-container:not(.has-overflow) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.visible-scrollbar-viewport {
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+}
+
+.visible-scrollbar-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.visible-scrollbar-track {
+  position: relative;
+  min-height: 0;
+  background: #e9e4d5;
+  border-radius: 8px;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.visible-scrollbar-track:focus-visible {
+  outline: 2px solid #00363F;
+  outline-offset: 2px;
+}
+
+.visible-scrollbar-track:active {
+  cursor: grabbing;
+}
+
+.visible-scrollbar-thumb {
+  position: absolute;
+  inset: 0 0 auto;
+  display: block;
+  background: #006779;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: background-color 0.15s ease;
+}
+
+.visible-scrollbar-track:hover .visible-scrollbar-thumb {
+  background: #00363F;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visible-scrollbar-thumb {
+    transition: none;
+  }
+}

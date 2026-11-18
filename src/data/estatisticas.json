@@ -1,0 +1,171 @@
+{
+  "geradoEm": "2026-11-18T05:13:17.280Z",
+  "totalPacientes": 915,
+  "totalCidades": 21,
+  "totalComunidades": 47,
+  "retinografias": 9812,
+  "retinografiasPorCidade": {
+    "Bequimão": 201,
+    "São Mateus do Maranhão": 774,
+    "Matões do Norte": 512,
+    "Icatu": 711,
+    "Peritoró": 485,
+    "Amarante do Maranhão": 922,
+    "Presidente Juscelino": 1021,
+    "Timon": 269,
+    "Turilândia": 291,
+    "São Bento": 367,
+    "Peri Mirim": 385,
+    "Guimarães": 506,
+    "Santo Amaro do Maranhão": 305,
+    "Rosário": 327,
+    "Cantanhede": 284,
+    "Miranda do Norte": 307,
+    "Presidente Médici": 589,
+    "Nova Olinda do Maranhão": 377,
+    "Milagres do Maranhão": 226,
+    "Santa Quitéria do Maranhão": 457,
+    "Primeira Cruz": 440
+  },
+  "pessoasPorCidade": {
+    "Bequimão": 27,
+    "São Mateus do Maranhão": 80,
+    "Matões do Norte": 41,
+    "Icatu": 75,
+    "Peritoró": 45,
+    "Amarante do Maranhão": 101,
+    "Presidente Juscelino": 73,
+    "Timon": 19,
+    "Turilândia": 24,
+    "São Bento": 29,
+    "Peri Mirim": 29,
+    "Guimarães": 44,
+    "Santo Amaro do Maranhão": 23,
+    "Rosário": 29,
+    "Cantanhede": 28,
+    "Miranda do Norte": 31,
+    "Presidente Médici": 57,
+    "Nova Olinda do Maranhão": 40,
+    "Milagres do Maranhão": 20,
+    "Santa Quitéria do Maranhão": 48,
+    "Primeira Cruz": 47
+  },
+  "comunidadesPorCidade": {
+    "Bequimão": {
+      "Conceição": 135,
+      "Mafra": 66
+    },
+    "São Mateus do Maranhão": {
+      "Vila Nova": 425,
+      "Queimadas": 248,
+      "Mutum": 94,
+      "Lage do Curral": 7
+    },
+    "Matões do Norte": {
+      "Povoado Ponto Certo": 146,
+      "Coivaras": 218,
+      "Santo Antônio": 148
+    },
+    "Icatu": {
+      "São Paulo": 42,
+      "Cabral": 211,
+      "Boa Vista": 32,
+      "Santo Antônio dos Caboclos / Boi Cavalo": 426
+    },
+    "Peritoró": {
+      "Matões da Rita": 91,
+      "Santa Rita": 25,
+      "Lago Grande": 62,
+      "Precateira": 45,
+      "Eira dos Conqueiros": 62,
+      "Vila Belem": 8,
+      "Santa Maria": 23,
+      "São Benedito do Elcias": 30,
+      "São Bento do Juvenal": 11,
+      "Resfriado": 47,
+      "Torneio do Meio": 19,
+      "Sossego": 14,
+      "Peritoro dos Pretos": 48
+    },
+    "Amarante do Maranhão": {
+      "Juçaral": 38,
+      "Novo Funil": 141,
+      "Rubiácea": 113,
+      "Governador": 233,
+      "": 122,
+      "São José": 215,
+      "Aldeia Três Passagens": 60
+    },
+    "Presidente Juscelino": {
+      "Santa Isabel": 25,
+      "São Mateus": 42,
+      "Sede": 241,
+      "Alto Alegre": 40,
+      "Bom Jesus": 14,
+      "Juçaral": 22,
+      "Boa Vista dos Pinhos": 28,
+      "Coxo": 14,
+      "São Raimundo dos Alves": 14,
+      "Carro Quebrado": 14,
+      "Povoado Bonfim": 14,
+      "Povoado Juçaral": 278,
+      "Taboca": 275
+    },
+    "Timon": {
+      "Boa Vista": 173,
+      "Boa Esperança": 31,
+      "Santo Antônio": 65
+    },
+    "Turilândia": {
+      "": 291
+    },
+    "São Bento": {
+      "": 367
+    },
+    "Peri Mirim": {
+      "": 385
+    },
+    "Guimarães": {
+      "": 506
+    },
+    "Santo Amaro do Maranhão": {
+      "": 305
+    },
+    "Rosário": {
+      "": 327
+    },
+    "Cantanhede": {
+      "": 284
+    },
+    "Miranda do Norte": {
+      "Sede": 293,
+      "Zona Rural": 14
+    },
+    "Presidente Médici": {
+      "": 589
+    },
+    "Nova Olinda do Maranhão": {
+      "Sede": 353,
+      "Zona Rural": 24
+    },
+    "Milagres do Maranhão": {
+      "Sede": 226
+    },
+    "Santa Quitéria do Maranhão": {
+      "Sede": 457
+    },
+    "Primeira Cruz": {
+      "Sede": 432,
+      "Povoado Areinhas": 8
+    }
+  },
+  "diagnosticos": {
+    "Catarata": 210,
+    "Degeneração Macular Relacionada à Idade": 16,
+    "Glaucoma": 51,
+    "Pterígio": 72,
+    "Retinopatia Diabética": 110,
+    "Cicatrizes Retinianas": 16,
+    "Leucoma": 14
+  }
+}

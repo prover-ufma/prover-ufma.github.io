@@ -1,0 +1,45 @@
+.tecnologias-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid #c9c9be;
+  border-left: 1px solid #c9c9be;
+}
+
+.tecnologia-card {
+  min-width: 0;
+  min-height: 170px;
+  border-right: 1px solid #c9c9be;
+  border-bottom: 1px solid #c9c9be;
+  padding: 30px;
+}
+
+.tecnologia-card h3 {
+  color: #293630;
+  font-family: var(--fonte-titulos);
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 16px;
+}
+
+.tecnologia-card p {
+  color: #45564f;
+  font-family: var(--fonte-texto);
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsivo (pontos de quebra em src/index.css) */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .tecnologias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologia-card {
+    min-height: 0;
+    padding: 24px;
+  }
+}
