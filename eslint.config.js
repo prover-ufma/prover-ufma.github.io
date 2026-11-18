@@ -19,7 +19,7 @@ export default defineConfig([
     },
   },
   {
-    // Scripts executados com Node (ex.: npm run estatisticas).
+    // Scripts executados com Node
     files: ['scripts/**/*.js'],
     languageOptions: { globals: globals.node },
   },

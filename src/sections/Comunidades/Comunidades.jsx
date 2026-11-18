@@ -65,6 +65,8 @@ function Comunidades({ dados }) {
   );
   // Até alguém clicar em uma cidade, a primeira da lista fica selecionada.
   const nomeSelecionado = nomeEscolhido ?? cidades[0]?.nome;
+  
+  const nomeDestacadoNoMapa = nomeComMouse ?? nomeSelecionado;
   const nomeDoPopup = nomeComMouse ?? nomePopupFixo;
   const cidadeDoPopup = cidadesNoMapa.find(({ nome }) => nome === nomeDoPopup);
 
@@ -136,7 +138,7 @@ function Comunidades({ dados }) {
                     key={cidade.nome}
                     type="button"
                     className={`marcador-cidade ${
-                      nomeSelecionado === cidade.nome ? "marcador-cidade-selecionado" : ""
+                      nomeDestacadoNoMapa === cidade.nome ? "marcador-cidade-selecionado" : ""
                     }`}
                     style={{
                       left: `${cidade.coordenadas.x}%`,
