@@ -87,10 +87,29 @@ export function agregarRetinografiasPorCidade(relatorios, cidadePorId) {
   };
 }
 
-// Soma as imagens de cada comunidade dentro de cada cidade
-export function agregarImagensPorComunidadeDaCidade(relatorios, cidadePorId, comunidadePorId) {
+// Nome exibido no lugar da comunidade quando ela não foi informada na
+// planilha, a partir da coluna TERRITÓRIO. Os textos são traduzidos no site.
+export const LOCALIDADE_NAO_INFORMADA = "Comunidade não informada";
+
+export function rotuloDoTerritorio(territorio) {
+  const texto = normalizarTexto(territorio);
+  if (texto.includes("quilomb")) return "Localidade quilombola";
+  if (texto.includes("ribeirinh")) return "Comunidade ribeirinha";
+  if (texto.includes("indigena") || texto.includes("aldeia")) return "Aldeia indígena";
+  return LOCALIDADE_NAO_INFORMADA;
+}
+
+// Soma as imagens de cada comunidade dentro de cada cidade. Sem comunidade
+// informada, as imagens entram no rótulo do território (ex.: "Localidade quilombola").
+export function agregarImagensPorComunidadeDaCidade(
+  relatorios,
+  cidadePorId,
+  comunidadePorId,
+  territorioPorId
+) {
   const cidades = mapearPorIdNormalizado(cidadePorId);
   const comunidades = mapearPorIdNormalizado(comunidadePorId);
+  const territorios = mapearPorIdNormalizado(territorioPorId);
   const totaisPorCidade = new Map();
 
   relatorios.forEach((relatorio) => {
@@ -112,7 +131,9 @@ export function agregarImagensPorComunidadeDaCidade(relatorios, cidadePorId, com
     totaisPorCidade.set(chaveCidade, cidadeExistente);
 
     const comunidade = comunidades.get(id);
-    const nomeComunidade = typeof comunidade === "string" ? comunidade.trim() : "";
+    const nomeComunidade =
+      (typeof comunidade === "string" && comunidade.trim()) ||
+      rotuloDoTerritorio(territorios.get(id));
     somarPorNome(cidadeExistente.comunidades, nomeComunidade, quantidadeImagens);
   });
 

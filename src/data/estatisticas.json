@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-18T05:13:17.280Z",
+  "geradoEm": "2026-11-18T18:08:20.847Z",
   "totalPacientes": 915,
   "totalCidades": 21,
   "totalComunidades": 47,
@@ -92,7 +92,7 @@
       "Novo Funil": 141,
       "Rubiácea": 113,
       "Governador": 233,
-      "": 122,
+      "Aldeia indígena": 122,
       "São José": 215,
       "Aldeia Três Passagens": 60
     },
@@ -117,32 +117,32 @@
       "Santo Antônio": 65
     },
     "Turilândia": {
-      "": 291
+      "Localidade quilombola": 291
     },
     "São Bento": {
-      "": 367
+      "Localidade quilombola": 367
     },
     "Peri Mirim": {
-      "": 385
+      "Localidade quilombola": 385
     },
     "Guimarães": {
-      "": 506
+      "Localidade quilombola": 506
     },
     "Santo Amaro do Maranhão": {
-      "": 305
+      "Localidade quilombola": 305
     },
     "Rosário": {
-      "": 327
+      "Localidade quilombola": 327
     },
     "Cantanhede": {
-      "": 284
+      "Localidade quilombola": 284
     },
     "Miranda do Norte": {
       "Sede": 293,
       "Zona Rural": 14
     },
     "Presidente Médici": {
-      "": 589
+      "Localidade quilombola": 589
     },
     "Nova Olinda do Maranhão": {
       "Sede": 353,

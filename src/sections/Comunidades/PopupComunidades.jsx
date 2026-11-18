@@ -36,7 +36,9 @@ function PopupComunidades({ cidade, fixo }) {
         <ul>
           {comunidades.map(({ nome, imagens }) => (
             <li key={nome || "sem-comunidade"}>
-              <span>{nome || t("Localidade quilombola")}</span>
+              {/* t() traduz os rótulos de território ("Localidade quilombola"…);
+                  nomes de comunidades não têm tradução e ficam como estão */}
+              <span>{t(nome || "Comunidade não informada")}</span>
               <strong>
                 {imagens.toLocaleString(idioma)} <small>{t("Imagens")}</small>
               </strong>

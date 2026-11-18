@@ -10,6 +10,7 @@ import {
   agregarRetinografiasPorCidade,
   contarComunidadesAtendidas,
   contarDiagnosticosPorId,
+  LOCALIDADE_NAO_INFORMADA,
 } from "../src/utils/relatorios.js";
 import { API_URL } from "../src/utils/api.js";
 import { resolverNomeMunicipio } from "../src/utils/municipios.js";
@@ -42,7 +43,7 @@ function lerToken() {
   return token;
 }
 
-// Busca na API a cidade e a comunidade de cada pessoa
+// Busca na API a cidade, a comunidade e o território de cada pessoa
 async function buscarVinculos() {
   const url = new URL(API_URL);
   url.searchParams.set("token", lerToken());
@@ -52,7 +53,7 @@ async function buscarVinculos() {
     throw new Error(`Erro na API: ${resposta.status}`);
   }
   const dados = await resposta.json();
-  for (const campo of ["cidadePorIdPhelcom", "comunidadePorIdPhelcom"]) {
+  for (const campo of ["cidadePorIdPhelcom", "comunidadePorIdPhelcom", "territorioPorIdPhelcom"]) {
     if (!dados?.[campo] || typeof dados[campo] !== "object") {
       throw new Error(
         `A API não retornou ${campo}. Confira se o TOKEN_ESTATISTICAS do .env.local ` +
@@ -63,10 +64,8 @@ async function buscarVinculos() {
   return dados;
 }
 
-const [relatorios, { cidadePorIdPhelcom, comunidadePorIdPhelcom }] = await Promise.all([
-  lerRelatorios(),
-  buscarVinculos(),
-]);
+const [relatorios, { cidadePorIdPhelcom, comunidadePorIdPhelcom, territorioPorIdPhelcom }] =
+  await Promise.all([lerRelatorios(), buscarVinculos()]);
 
 const retinografias = agregarRetinografiasPorCidade(relatorios, cidadePorIdPhelcom);
 const comunidades = contarComunidadesAtendidas(relatorios, comunidadePorIdPhelcom);
@@ -82,7 +81,8 @@ const estatisticas = {
   comunidadesPorCidade: agregarImagensPorComunidadeDaCidade(
     relatorios,
     cidadePorIdPhelcom,
-    comunidadePorIdPhelcom
+    comunidadePorIdPhelcom,
+    territorioPorIdPhelcom
   ),
   diagnosticos: contarDiagnosticosPorId(relatorios),
 };
@@ -129,5 +129,13 @@ if (retinografias.relatoriosSemCidade > 0) {
 if (comunidades.pessoasSemComunidade > 0) {
   console.warn(
     `Aviso: ${comunidades.pessoasSemComunidade} pessoas sem comunidade no Apps Script.`
+  );
+}
+const semTerritorio = Object.entries(estatisticas.comunidadesPorCidade)
+  .filter(([, porComunidade]) => LOCALIDADE_NAO_INFORMADA in porComunidade)
+  .map(([cidade, porComunidade]) => `${cidade} (${porComunidade[LOCALIDADE_NAO_INFORMADA]} imagens)`);
+if (semTerritorio.length > 0) {
+  console.warn(
+    `Aviso: imagens sem comunidade e sem território reconhecido (aparecem como "${LOCALIDADE_NAO_INFORMADA}"): ${semTerritorio.join(", ")}.`
   );
 }
