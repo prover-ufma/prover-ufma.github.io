@@ -108,20 +108,37 @@ ${pathsMunicipios.join("\n")}
 </svg>
 `;
 
-// Centro de cada município na mesma projeção
+// Posição de cada marcador: a sede do município (onde fica a cidade), e não o
+// centro da área, que pode ficar longe da cidade em municípios grandes.
+// As sedes vêm de scripts/dados/sedes-21.json (base kelvins/municipios-brasileiros,
+// com dados do IBGE) e são ligadas aos contornos pelo código IBGE.
+const sedes = await lerJson("scripts/dados/sedes-21.json");
+const sedePorCodigo = new Map(sedes.map((sede) => [sede.codigo_ibge, sede]));
+
 const coordenadas = {};
-const centrosFora = [];
+const semSede = [];
+const sedesFora = [];
 for (const feature of municipios.features) {
   const nome = feature.properties.name;
-  const [cx, cy] = geoPath(projecao).centroid(feature);
-  coordenadas[nome] = {
-    x: arredondar((cx / LARGURA) * 100),
-    y: arredondar((cy / ALTURA) * 100),
-  };
+  const sede = sedePorCodigo.get(feature.properties.id);
 
-  if (!geoContains(feature, projecao.invert([cx, cy]))) {
-    centrosFora.push(nome);
+  let ponto;
+  if (sede) {
+    ponto = projecao([sede.longitude, sede.latitude]);
+    if (!geoContains(feature, [sede.longitude, sede.latitude])) {
+      sedesFora.push(nome);
+    }
+  } else {
+    // Sem sede na lista: usa o centro do município
+    ponto = geoPath(projecao).centroid(feature);
+    semSede.push(nome);
   }
+
+  const [x, y] = ponto;
+  coordenadas[nome] = {
+    x: arredondar((x / LARGURA) * 100),
+    y: arredondar((y / ALTURA) * 100),
+  };
 }
 
 // Lista dos nomes em ordem alfabética
@@ -138,9 +155,14 @@ await writeFile(caminho("src/data/municipios.json"), `${JSON.stringify(nomes, nu
 
 console.log(`Mapa ${LARGURA}x${ALTURA} · ${nomes.length} municípios · ${pathsVizinhos.length} estados vizinhos`);
 console.log(`SVG: ${(Buffer.byteLength(svg) / 1024).toFixed(0)} KB`);
-if (centrosFora.length > 0) {
+if (semSede.length > 0) {
   console.warn(
-    `Aviso: centro fora do contorno em ${centrosFora.join(", ")}. ` +
+    `Aviso: sem sede em scripts/dados/sedes-21.json, marcador no centro do município: ${semSede.join(", ")}.`
+  );
+}
+if (sedesFora.length > 0) {
+  console.warn(
+    `Aviso: sede fora do contorno do município em ${sedesFora.join(", ")}. ` +
       "Se o marcador ficar ruim, ajuste em src/sections/Comunidades/ajustesCoordenadas.js."
   );
 }
